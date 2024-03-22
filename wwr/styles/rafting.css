@@ -22,42 +22,64 @@ body {
     padding: 20px;
 }
 
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
 header {
     padding: 15px;
     background-color: var(--accent1-color);
 }
 
-p {
-    padding: 15px;
+header nav {
+    /* display: inline-block; */
 }
 
-/* .hero {
-    max-width: 960px;
+.hero {
     position: relative;
-    font-family: var(--accent1-color);
 }
 
-.hero img:first-child {
-    display: block;
-    max-width: 960px;
-    height: auto;
+.hero > img {
+    top: 25px;
     position: absolute;
-    opacity: 0.5;
+    width: 100%;
+    height: 400px;
+    opacity: 0.5; /* Adjust opacity as desired */
     z-index: -1;
 }
 
-.hero h1 article {
+.hero h1 {
     position: absolute;
+    top: 50px; /* Adjust top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure the title is above the background image */
+    color: white;
+}
+
+.thearticle {
+    top: 100px; /* Adjust spacing between h1 and article */
+    z-index: 1;
+    display: inline-block;
 }
 
 .thearticle img {
-    position: absolute;
-    float: right;
+    top: 100px;
+    display: block;
+    width: 250px; /* Adjust width as needed */
+    height: auto;
+    margin: 0 auto;
+}
+
+.thearticle p {
+    /* display: inline-block; */
+    vertical-align: middle;
+    margin-left: 100px; /* Adjust spacing between image and text */
+    z-index: 1;
+}
+
+section {
+    margin-top: 375px;
+}
+
+.adventure {
+    display: block;
 }
 
 .adventure img {
@@ -65,44 +87,7 @@ p {
     display: block;
     max-width: 400px;
     max-height: auto;
-} */
-
-.hero {
-    position: relative;
 }
-
-.hero > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-}
-
-.hero article img {
-    float: right;
-}
-
-.hero h1,
-.hero section > h2,
-.hero section > p,
-.hero section img {
-    position: relative;
-    display: block;
-    max-width: 400px;
-    max-height: auto;
-}
-
-.hero > * {
-    position: relative;
-    z-index: 1;
-}
-
-
-
-
 
 nav {
     background-color: var(--accent1-color);
