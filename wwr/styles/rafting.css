@@ -40,21 +40,22 @@ header nav {
     position: absolute;
     width: 100%;
     height: 400px;
-    opacity: 0.5; /* Adjust opacity as desired */
+    opacity: 0.5; 
     z-index: -1;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50px; /* Adjust top position as needed */
+    top: 50px; 
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1; /* Ensure the title is above the background image */
+    z-index: 1; 
     color: white;
 }
 
 .thearticle {
-    top: 100px; /* Adjust spacing between h1 and article */
+
+    top: 100px; 
     z-index: 1;
     display: inline-block;
 }
@@ -62,7 +63,7 @@ header nav {
 .thearticle img {
     top: 100px;
     display: block;
-    width: 250px; /* Adjust width as needed */
+    width: 250px; 
     height: auto;
     margin: 0 auto;
 }
@@ -70,7 +71,7 @@ header nav {
 .thearticle p {
     /* display: inline-block; */
     vertical-align: middle;
-    margin-left: 100px; /* Adjust spacing between image and text */
+    margin-left: 100px; 
     z-index: 1;
 }
 
