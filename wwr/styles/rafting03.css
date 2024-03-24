@@ -5,7 +5,6 @@
     --secondary-color: #fab70c;
     --accent1-color: #e16e1a;
     --accent2-color: #ded6a4;
-    --accent3-color: #6f9584;
 
     --heading-font: var(--heading-font), serif;
     --paragraph-font: var(--paragraph-font), serif;
@@ -21,41 +20,24 @@ body {
     max-width: 960px;
     margin: auto;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
-    display: grid;
     padding: 15px;
     background-color: var(--accent1-color);
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-}
-
-header img {
-    max-width: 100px;
-    /* max-height: auto; */
-    order: 1;
 }
 
 header nav {
-    order: 2;
-    display: flex;
-    flex-direction: row;
+    /* display: inline-block; */
 }
 
 .hero {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    order: 1;
 }
 
 .hero > img {
     top: 25px;
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     height: 400px;
     opacity: 0.5; 
@@ -64,74 +46,49 @@ header nav {
 
 .hero h1 {
     position: absolute;
-    top: 25px; 
+    top: 50px; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; 
-    color: var(--primary-color);
+    color: white;
 }
 
 .thearticle {
-    position: absolute;
-    top: 125px; 
+
+    top: 100px; 
     z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline-block;
 }
 
 .thearticle img {
     top: 100px;
+    display: block;
     width: 250px; 
     height: auto;
     margin: 0 auto;
-    order: 2;
 }
 
 .thearticle p {
+    /* display: inline-block; */
     vertical-align: middle;
     margin-left: 100px; 
     z-index: 1;
-    order: 1;
 }
 
 section {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--accent2-color);
-}
-
-section h2 {
-    order: 1;
-}
-
-section p {
-    order: 2;
+    margin-top: 375px;
 }
 
 .adventure {
-    order: 3;
-    display: flex;
-    background-color: var(--accent3-color);
-    max-width: 960px;
-}
-
-.adventure h2 {
-    order: 1;
-}
-
-.adventureimages {
-    order: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: block;
 }
 
 .adventure img {
-    max-width: 150px;
-    /* max-height: auto; */ /*I'm only removing this because the validator tool wouldn't allow it */
-} 
+    position: relative;
+    display: block;
+    max-width: 400px;
+    max-height: auto;
+}
 
 nav {
     background-color: var(--accent1-color);
@@ -155,20 +112,6 @@ nav a:hover {
     background-color: var(--nav-hover-link-color);
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
 footer a {
     text-decoration: none;
 }
-/* 
-Antilons Towing - 801-623-1710
-wt032224
-3/22/24
-Wrangler towing 
-827 s 170 e
-801-489-7141
- */
