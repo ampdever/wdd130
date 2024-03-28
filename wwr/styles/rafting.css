@@ -77,7 +77,7 @@ header nav {
     z-index: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .thearticle img {
@@ -164,11 +164,3 @@ footer {
 footer a {
     text-decoration: none;
 }
-/* 
-Antilons Towing - 801-623-1710
-wt032224
-3/22/24
-Wrangler towing 
-827 s 170 e
-801-489-7141
- */
