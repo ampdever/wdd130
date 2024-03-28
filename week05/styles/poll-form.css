@@ -75,7 +75,7 @@ label, input, button, select, textarea {
 }
 
 input, select, textarea {
-    padding: 1rem;
+    padding: .3rem;
     font-size: 1.1rem;
 }
 
