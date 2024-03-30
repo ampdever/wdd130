@@ -164,3 +164,92 @@ footer {
 footer a {
     text-decoration: none;
 }
+
+/************* contact styling ***************/
+
+.companyinformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+.companyinformation iframe {
+    margin: 10px;
+    border-radius: 2%;
+}
+
+.employeeprofile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #6f9584;
+}
+.employeeprofile img {
+    width: 200px;
+    height: auto;
+}
+
+/************* form styling ***************/
+
+form {
+    background-color: #ded6a4;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #1e5139;
+    margin-bottom: 20px;
+    border-radius: 2%;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #1e5139;
+    font-family: var(--heading-font);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1e5139;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #6f9584;
+    border-radius: 2%;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #fab70c;
+    color: #1e5139;
+    border: none;
+    border-radius: 2%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #6f9584;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
