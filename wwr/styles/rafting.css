@@ -3,7 +3,7 @@
 :root {
     --primary-color: #1e5139;
     --secondary-color: #fab70c;
-    --accent1-color: #e16e1a;
+    --accent1-color: #db935f;
     --accent2-color: #ded6a4;
     --accent3-color: #6f9584;
 
@@ -36,7 +36,6 @@ header {
 
 header img {
     max-width: 100px;
-    /* max-height: auto; */
     order: 1;
 }
 
@@ -55,7 +54,6 @@ header nav {
 
 .hero > img {
     top: 25px;
-    /* position: absolute; */
     width: 100%;
     height: 400px;
     opacity: 0.5; 
@@ -129,8 +127,7 @@ section p {
 }
 
 .adventure img {
-    max-width: 150px;
-    /* max-height: auto; */ /*I'm only removing this because the validator tool wouldn't allow it */
+
 } 
 
 nav {
