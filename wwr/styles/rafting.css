@@ -121,13 +121,16 @@ section p {
 }
 
 .adventureimages {
+    max-width: 960px;
     order: 2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 .adventure img {
-
+    width: 100px;
+    height: auto;
 } 
 
 nav {
