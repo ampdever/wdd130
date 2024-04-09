@@ -11,9 +11,9 @@
     --paragraph-font: var(--paragraph-font), serif;
 
     --nav-background-color: #1e5139;
-    --nav-link-color: #1e5139;
-    --nav-hover-link-color: #1e5139;
-    --nav-hover-background-color: #1e5139;
+    --nav-link-color: #17412d;
+    --nav-hover-link-color: #038046;
+    --nav-hover-background-color: #cbcbcb;
 }
 
 body {
@@ -52,7 +52,7 @@ header nav {
     order: 1;
 }
 
-.hero > img {
+.hero img {
     top: 25px;
     width: 100%;
     height: 400px;
@@ -159,10 +159,17 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: var(--accent1-color);
+    margin-top: auto;
 }
 
 footer a {
     text-decoration: none;
+}
+
+footer img {
+    padding: 5px;
+    width: 25px;
 }
 
 /************* contact styling ***************/
@@ -252,4 +259,197 @@ textarea {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+ 
+
+/************* tirps styling ***************/
+
+.maintrips {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #6f9584;
+}
+
+.contact {
+    text-align: center;
+    align-items: center;
+    margin-top: 50%;
+    margin-left: 25%;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e5139;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: white 0.3s ease;
+}
+.contact-button:hover {
+    background-color: #6f9584;
+    border-color: white;
+}
+
+.tablestuff {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid var(--primary-color);
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: #1e5139;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--accent2-color);
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td:nth-child(3) {
+    width: 60%;
+}
+
+tr:hover {
+    background-color: var(--accent3-color);
+    color: white;
+}
+
+.pics {
+    grid-column: 1 / -1;
+    padding: 20px;
+    background-color: #ded6a4;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: var(--paragraph-font);
+}
+
+.pics img {
+    max-width: 100px;
+    max-height: 150px;
+}
+
+/************* Home styling ***************/
+
+.indeximageheader {
+    max-width: 960px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.indeximageheader h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.indeximageheader img {
+    top: 25px;
+    width: 100%;
+    height: 300px;
+    opacity: 0.8; 
+    z-index: -1;
+}
+
+.indexgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 600px;
+    width: 960px;
+}
+
+.indexform {
+    background-color: #6f9584;
+    padding: 37px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    order: 1;
+}
+
+.indexform label {
+    color: black;
+}
+
+.indeximage1 {
+    position: relative;
+    /* margin: 0 auto; */
+    order: 2;
+}
+
+.indeximage1 img {
+    width: 480px;
+    height: auto;
+    display: block;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    text-align: center;
+}
+
+.indeximage2 {
+    position: relative;
+    /* margin: 0 auto; */
+    order: 3;
+}
+
+.indeximage2 img {
+    width: 480px;
+    height: auto;
+    display: block;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    text-align: center;
+}
+
+.indextripslink {
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #db935f;
+    order: 4;
+}
+
+.end {
+    margin-top: 1px;
+    display: inline-block;
+    text-align: right;
 }
